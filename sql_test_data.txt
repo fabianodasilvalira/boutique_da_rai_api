@@ -1,0 +1,236 @@
+-- SQL Inserts para dados de teste
+-- Perfumes API
+
+-- Categorias
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (1, 'Perfumes Masculinos', 'Fragrâncias marcantes e sofisticadas para homens modernos', '/images/perfume_1.webp', 'perfumes-masculinos', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (2, 'Perfumes Femininos', 'Aromas delicados e envolventes para mulheres de atitude', '/images/perfume_2.webp', 'perfumes-femininos', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (3, 'Perfumes Unissex', 'Fragrâncias versáteis para todos os estilos e personalidades', '/images/perfume_3.webp', 'perfumes-unissex', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (4, 'Perfumes Infantis', 'Aromas suaves e divertidos para os pequenos', '/images/perfume_1.webp', 'perfumes-infantis', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (5, 'Cosméticos', 'Produtos de beleza e cuidados pessoais de alta qualidade', '/images/perfume_2.webp', 'cosmeticos', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO categorias (id, nome, descricao, imagem_url, slug, created_at, updated_at) 
+VALUES (6, 'Bijuterias', 'Acessórios elegantes para complementar seu estilo', '/images/perfume_3.webp', 'bijuterias', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Produtos
+-- Perfumes Masculinos
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (1, 'Elegance Pour Homme', 'Fragrância amadeirada com notas de sândalo e bergamota', 189.90, '/images/perfume_1.webp', 1, 1, 50, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (2, 'Blue Ocean', 'Aroma fresco e aquático para o dia a dia', 159.90, '/images/perfume_2.webp', 1, 0, 30, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (3, 'Black Intense', 'Perfume intenso com notas de couro e especiarias', 219.90, '/images/perfume_3.webp', 1, 0, 25, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Perfumes Femininos
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (4, 'Floral Essence', 'Fragrância floral com notas de jasmim e rosa', 179.90, '/images/perfume_2.webp', 2, 1, 40, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (5, 'Sweet Vanilla', 'Aroma doce e envolvente com notas de baunilha', 169.90, '/images/perfume_1.webp', 2, 0, 35, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (6, 'Midnight Rose', 'Perfume sofisticado com notas de rosa e âmbar', 199.90, '/images/perfume_3.webp', 2, 1, 20, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Perfumes Unissex
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (7, 'Fresh Citrus', 'Fragrância cítrica refrescante para qualquer ocasião', 149.90, '/images/perfume_3.webp', 3, 1, 45, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (8, 'Urban Style', 'Aroma moderno com notas de lavanda e cedro', 179.90, '/images/perfume_1.webp', 3, 0, 30, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (9, 'Pure White', 'Perfume clean com notas de algodão e almíscar', 159.90, '/images/perfume_2.webp', 3, 0, 25, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Perfumes Infantis
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (10, 'Sweet Dreams', 'Colônia suave com aroma de lavanda para acalmar', 89.90, '/images/perfume_1.webp', 4, 1, 40, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (11, 'Fruity Fun', 'Fragrância divertida com notas de frutas vermelhas', 79.90, '/images/perfume_2.webp', 4, 0, 35, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (12, 'Baby Care', 'Colônia delicada especial para bebês', 99.90, '/images/perfume_3.webp', 4, 0, 30, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Cosméticos
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (13, 'Hidratante Facial', 'Creme hidratante para todos os tipos de pele', 69.90, '/images/perfume_2.webp', 5, 1, 50, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (14, 'Máscara Capilar', 'Tratamento intensivo para cabelos danificados', 59.90, '/images/perfume_1.webp', 5, 0, 40, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (15, 'Kit Maquiagem', 'Kit completo com produtos essenciais para maquiagem', 129.90, '/images/perfume_3.webp', 5, 1, 25, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Bijuterias
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (16, 'Conjunto Colar e Brincos', 'Conjunto elegante banhado a ouro', 89.90, '/images/perfume_3.webp', 6, 1, 30, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (17, 'Pulseira Charm', 'Pulseira ajustável com pingentes decorativos', 49.90, '/images/perfume_1.webp', 6, 0, 35, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO produtos (id, nome, descricao, preco, imagem_url, categoria_id, destaque, estoque, created_at, updated_at) 
+VALUES (18, 'Anel Ajustável', 'Anel com design moderno e acabamento premium', 39.90, '/images/perfume_2.webp', 6, 0, 40, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Quiz Perguntas
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (1, 'Qual é o seu dia a dia?', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (2, 'Qual intensidade de fragrância você prefere?', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (3, 'Para qual ocasião você está buscando um perfume?', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (4, 'Qual tipo de fragrância mais lhe agrada?', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (5, 'Quais sensações e sentimentos você quer despertar?', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Quiz Opções
+-- Pergunta 1
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (1, 1, 'Trabalho em escritório', 'trabalho', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (2, 1, 'Fico mais em casa', 'casa', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (3, 1, 'Atividades ao ar livre', 'ar_livre', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (4, 1, 'Bastante variado', 'variado', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 2
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (5, 2, 'Suave', 'suave', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (6, 2, 'Moderada', 'moderada', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (7, 2, 'Intensa', 'intensa', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 3
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (8, 3, 'Dia a dia', 'dia_a_dia', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (9, 3, 'Trabalho', 'trabalho', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (10, 3, 'Encontro romântico', 'encontro', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (11, 3, 'Ocasião especial', 'ocasiao_especial', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 4
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (12, 4, 'Floral', 'floral', '/images/floral.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (13, 4, 'Frutal', 'frutal', '/images/frutal.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (14, 4, 'Oriental', 'oriental', '/images/oriental.jpeg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (15, 4, 'Amadeirado', 'amadeirado', '/images/amadeirado.jpeg', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 5
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (16, 5, 'Frescor e liberdade', 'frescor', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (17, 5, 'Sensualidade e mistério', 'sensualidade', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (18, 5, 'Elegância e sofisticação', 'elegancia', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (19, 5, 'Conforto e aconchego', 'conforto', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Quiz Resultados
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (1, 'Floral Delicado', 'Um perfume floral suave com notas de jasmim e rosa, ideal para o dia a dia e ambientes de trabalho.', 'Ideal para mulheres que preferem fragrâncias sutis e elegantes para o cotidiano.', '/images/perfume_1.webp', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (2, 'Floral Intenso', 'Uma fragrância floral marcante com notas de gardênia e ylang-ylang. Perfeita para ocasiões especiais e encontros românticos.', 'Perfeito para mulheres que desejam marcar presença com uma fragrância memorável.', '/images/perfume_2.webp', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (3, 'Frutal Refrescante', 'Um perfume frutal leve com notas cítricas de laranja e maçã verde. Ideal para o dia a dia e atividades ao ar livre.', 'Excelente para mulheres dinâmicas que buscam frescor durante todo o dia.', '/images/perfume_3.webp', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (4, 'Oriental Misterioso', 'Uma fragrância oriental intensa com notas de baunilha e âmbar. Perfeita para noites especiais e encontros românticos.', 'Ideal para mulheres que desejam transmitir sensualidade e mistério.', '/images/woman_perfume_1.webp', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (5, 'Amadeirado Sofisticado', 'Um perfume amadeirado com notas de sândalo e cedro. Equilibrado e versátil, adequado para diversas ocasiões.', 'Perfeito para mulheres que apreciam fragrâncias sofisticadas e atemporais.', '/images/woman_perfume_2.webp', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Quiz Regras (JSON em formato de string para SQLite)
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (1, '{"4": "floral", "2": "suave"}', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (2, '{"4": "floral", "2": "intensa"}', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (3, '{"4": "frutal"}', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (4, '{"4": "oriental"}', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (5, '{"4": "amadeirado"}', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (6, '{"5": "frescor", "1": "ar_livre"}', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (7, '{"5": "sensualidade", "3": "encontro"}', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (8, '{"5": "elegancia", "3": "ocasiao_especial"}', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (9, '{"5": "conforto", "1": "casa"}', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (10, '{"3": "trabalho", "1": "trabalho"}', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Contatos
+INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
+VALUES (1, 'Maria Silva', 'maria.silva@exemplo.com', '(11) 98765-4321', 'Dúvida sobre produto', 'Olá, gostaria de saber se o perfume Floral Essence é hipoalergênico. Obrigada!', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
+VALUES (2, 'João Santos', 'joao.santos@exemplo.com', '(21) 91234-5678', 'Problema com entrega', 'Meu pedido #12345 ainda não chegou e já se passaram 10 dias. Podem verificar?', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
+VALUES (3, 'Ana Oliveira', 'ana.oliveira@exemplo.com', '(31) 99876-5432', 'Sugestão de produto', 'Adoraria ver uma linha de perfumes com fragrâncias brasileiras na próxima coleção!', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
+VALUES (4, 'Carlos Pereira', 'carlos.pereira@exemplo.com', '(41) 98765-1234', 'Elogio', 'Comprei o perfume Black Intense e estou muito satisfeito. A fragrância dura o dia todo!', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
+VALUES (5, 'Fernanda Lima', 'fernanda.lima@exemplo.com', '(51) 97654-3210', 'Parceria', 'Sou influenciadora digital e gostaria de conhecer mais sobre possíveis parcerias com a marca.', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Usuários (senha: admin123)
+INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
+VALUES (1, 'Administrador', 'admin@perfumes.com.br', '$2b$12$tPMxn7DQQyYY.zQYTUGnUOQNL9Ew9vLo1F8hPUvQJNt/KG.4.V7oe', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Usuário adicional (senha: teste123)
+INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
+VALUES (2, 'Usuário Teste', 'teste@perfumes.com.br', '$2b$12$1X8QLs0T1RmEn/Z3yqJ6B.X0eJ5OYeXbRn6OZ8/2uTFPT0YrLF.Aq', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Usuário de vendas (senha: vendas123)
+INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
+VALUES (3, 'Equipe de Vendas', 'vendas@perfumes.com.br', '$2b$12$hKY9D.z7InigTlnZgRdeS.4qJITI0MStO40tJc.xOJGmD8GJwMTHO', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

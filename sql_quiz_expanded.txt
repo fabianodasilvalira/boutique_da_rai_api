@@ -1,0 +1,188 @@
+-- SQL Inserts adicionais para o Quiz
+-- Perfumes API - Dados expandidos
+
+-- Novas perguntas para o Quiz
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (6, 'Em qual estação do ano você mais gosta de usar perfume?', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (7, 'Qual é o seu orçamento para um perfume?', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (8, 'Você prefere perfumes nacionais ou importados?', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (9, 'Qual a duração ideal de fragrância para você?', 9, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_perguntas (id, pergunta, ordem, created_at, updated_at) 
+VALUES (10, 'Você tem alguma alergia a ingredientes específicos?', 10, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Novas opções para as perguntas adicionais
+-- Pergunta 6 - Estações
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (20, 6, 'Primavera', 'primavera', '/images/primavera.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (21, 6, 'Verão', 'verao', '/images/verao.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (22, 6, 'Outono', 'outono', '/images/outono.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (23, 6, 'Inverno', 'inverno', '/images/inverno.webp', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 7 - Orçamento
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (24, 7, 'Até R$ 100', 'economico', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (25, 7, 'Entre R$ 100 e R$ 200', 'moderado', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (26, 7, 'Entre R$ 200 e R$ 300', 'premium', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (27, 7, 'Acima de R$ 300', 'luxo', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 8 - Origem
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (28, 8, 'Nacionais', 'nacional', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (29, 8, 'Importados', 'importado', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (30, 8, 'Não tenho preferência', 'indiferente', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 9 - Duração
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (31, 9, 'Curta (até 4 horas)', 'curta', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (32, 9, 'Média (4-8 horas)', 'media', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (33, 9, 'Longa (mais de 8 horas)', 'longa', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Pergunta 10 - Alergias
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (34, 10, 'Sim, a álcool', 'alergia_alcool', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (35, 10, 'Sim, a fragrâncias fortes', 'alergia_forte', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (36, 10, 'Sim, a ingredientes específicos', 'alergia_especifica', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_opcoes (id, pergunta_id, texto, valor_id, imagem_url, created_at, updated_at) 
+VALUES (37, 10, 'Não tenho alergias', 'sem_alergia', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Novos resultados do quiz
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (6, 'Cítrico Refrescante', 'Um perfume cítrico com notas de limão e bergamota, ideal para dias quentes e atividades ao ar livre.', 'Perfeito para pessoas ativas que buscam uma fragrância refrescante e energizante.', '/images/perfume_1.webp', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (7, 'Aquático Suave', 'Uma fragrância aquática com notas marinhas e frescas, ideal para o dia a dia e ambientes de trabalho.', 'Excelente para quem busca uma fragrância discreta e refrescante para o uso diário.', '/images/perfume_2.webp', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (8, 'Gourmand Envolvente', 'Um perfume gourmand com notas de baunilha, caramelo e chocolate, ideal para dias frios e ocasiões especiais.', 'Ideal para quem gosta de fragrâncias doces e aconchegantes que despertam sensações de conforto.', '/images/perfume_3.webp', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (9, 'Verde Natural', 'Uma fragrância verde com notas de folhas, grama cortada e ervas frescas, ideal para amantes da natureza.', 'Perfeito para quem busca uma conexão com a natureza através de aromas frescos e naturais.', '/images/woman_perfume_1.webp', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (10, 'Especiado Intenso', 'Um perfume especiado com notas de pimenta, canela e cravo, ideal para personalidades marcantes.', 'Excelente para quem deseja uma fragrância marcante e sofisticada que não passa despercebida.', '/images/woman_perfume_2.webp', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (11, 'Fougère Clássico', 'Uma fragrância fougère com notas de lavanda, musgo de carvalho e feno, ideal para homens clássicos.', 'Perfeito para homens que apreciam fragrâncias tradicionais e atemporais.', '/images/perfume_1.webp', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (12, 'Chypre Sofisticado', 'Um perfume chypre com notas de bergamota, patchouli e musgo, ideal para ocasiões formais.', 'Ideal para pessoas sofisticadas que apreciam fragrâncias complexas e elegantes.', '/images/perfume_2.webp', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (13, 'Floral Frutal', 'Uma fragrância floral frutal com notas de pêssego, jasmim e rosa, ideal para mulheres joviais.', 'Perfeito para mulheres que buscam uma fragrância alegre, feminina e moderna.', '/images/perfume_3.webp', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (14, 'Aromático Versátil', 'Um perfume aromático com notas de alecrim, sálvia e lavanda, ideal para qualquer ocasião.', 'Excelente para quem busca uma fragrância versátil que funciona bem em diferentes contextos.', '/images/woman_perfume_1.webp', 9, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_resultados (id, nome, descricao, recomendacao, imagem_url, produto_recomendado_id, created_at, updated_at) 
+VALUES (15, 'Amadeirado Leve', 'Uma fragrância amadeirada suave com notas de cedro e sândalo, ideal para uso diário.', 'Ideal para quem aprecia notas amadeiradas mas prefere uma intensidade moderada.', '/images/woman_perfume_2.webp', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Regras adicionais para o quiz (combinações mais complexas)
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (11, '{"4": "floral", "6": "primavera"}', 13, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (12, '{"4": "frutal", "6": "verao"}', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (13, '{"4": "oriental", "6": "inverno"}', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (14, '{"4": "amadeirado", "6": "outono"}', 15, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (15, '{"2": "suave", "10": "alergia_forte"}', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (16, '{"2": "intensa", "9": "longa"}', 10, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (17, '{"7": "economico", "8": "nacional"}', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (18, '{"7": "luxo", "8": "importado"}', 12, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (19, '{"3": "trabalho", "9": "media"}', 14, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (20, '{"3": "encontro", "6": "inverno"}', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Regras com combinações de 3 fatores
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (21, '{"4": "floral", "6": "primavera", "2": "suave"}', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (22, '{"4": "floral", "6": "primavera", "2": "intensa"}', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (23, '{"4": "frutal", "6": "verao", "1": "ar_livre"}', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (24, '{"4": "oriental", "5": "sensualidade", "3": "encontro"}', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (25, '{"4": "amadeirado", "7": "premium", "8": "importado"}', 11, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Regras com combinações de 4 fatores
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (26, '{"4": "floral", "6": "primavera", "3": "dia_a_dia", "10": "sem_alergia"}', 13, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (27, '{"4": "amadeirado", "6": "inverno", "3": "trabalho", "9": "longa"}', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (28, '{"4": "oriental", "6": "outono", "7": "luxo", "5": "elegancia"}', 12, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (29, '{"4": "frutal", "6": "verao", "10": "alergia_forte", "2": "suave"}', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (30, '{"1": "trabalho", "3": "trabalho", "9": "media", "10": "sem_alergia"}', 14, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Regras com combinações de 5 fatores (muito específicas)
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (31, '{"1": "trabalho", "2": "suave", "4": "floral", "6": "primavera", "10": "sem_alergia"}', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (32, '{"1": "ar_livre", "2": "moderada", "4": "frutal", "6": "verao", "9": "media"}', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (33, '{"3": "encontro", "5": "sensualidade", "4": "oriental", "6": "inverno", "7": "premium"}', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (34, '{"1": "casa", "5": "conforto", "4": "amadeirado", "6": "outono", "9": "longa"}', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO quiz_regras (id, combinacao_respostas, resultado_id, created_at, updated_at) 
+VALUES (35, '{"1": "variado", "2": "intensa", "4": "amadeirado", "7": "luxo", "8": "importado"}', 10, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

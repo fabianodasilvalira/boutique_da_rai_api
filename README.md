@@ -159,4 +159,3 @@ Para inicializar o banco de dados com dados de exemplo:
 ```
 curl -X POST http://localhost:8000/init-db
 ```
-# boutique_da_rai_api

@@ -9,8 +9,6 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     PROJECT_NAME: str = "Perfumes API"
-    DATABASE_URL: str  # Declare a variável DATABASE_URL
-
     
     # Database
     SQLALCHEMY_DATABASE_URI: str = "sqlite:///./perfumes.db"
