@@ -1,0 +1,58 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+*.pot
+*.mo
+*.swp
+*~
+*.bak
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+.venv/
+
+# Diretórios de build
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Arquivos de dependências
+*.env
+*.ini
+*.json
+*.yml
+
+# Configurações do PyCharm
+.idea/
+
+# Arquivos de configuração do VSCode
+.vscode/
+
+# Arquivos de banco de dados locais
+db.sqlite3
+*.db
+
+# Arquivos de cache de pacotes
+__pypackages__/
+*.pyc
+
+# Docker (caso use)
+Dockerfile
+docker-compose.yml
+
+# Arquivos de teste gerados
+*.coverage
+*.tox
+*.nox
+*.hypothesis
+.coverage.*
+nosetests.xml
+coverage.xml
+*.log
