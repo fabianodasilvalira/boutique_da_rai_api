@@ -212,25 +212,5 @@ INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, 
 VALUES (1, 'Maria Silva', 'maria.silva@exemplo.com', '(11) 98765-4321', 'Dúvida sobre produto', 'Olá, gostaria de saber se o perfume Floral Essence é hipoalergênico. Obrigada!', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
-VALUES (2, 'João Santos', 'joao.santos@exemplo.com', '(21) 91234-5678', 'Problema com entrega', 'Meu pedido #12345 ainda não chegou e já se passaram 10 dias. Podem verificar?', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
-INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
-VALUES (3, 'Ana Oliveira', 'ana.oliveira@exemplo.com', '(31) 99876-5432', 'Sugestão de produto', 'Adoraria ver uma linha de perfumes com fragrâncias brasileiras na próxima coleção!', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
-INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
-VALUES (4, 'Carlos Pereira', 'carlos.pereira@exemplo.com', '(41) 98765-1234', 'Elogio', 'Comprei o perfume Black Intense e estou muito satisfeito. A fragrância dura o dia todo!', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
-INSERT INTO contatos (id, nome, email, telefone, assunto, mensagem, respondido, created_at, updated_at) 
-VALUES (5, 'Fernanda Lima', 'fernanda.lima@exemplo.com', '(51) 97654-3210', 'Parceria', 'Sou influenciadora digital e gostaria de conhecer mais sobre possíveis parcerias com a marca.', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
--- Usuários (senha: admin123)
-INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
-VALUES (1, 'Administrador', 'admin@perfumes.com.br', '$2b$12$tPMxn7DQQyYY.zQYTUGnUOQNL9Ew9vLo1F8hPUvQJNt/KG.4.V7oe', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
--- Usuário adicional (senha: teste123)
-INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
-VALUES (2, 'Usuário Teste', 'teste@perfumes.com.br', '$2b$12$1X8QLs0T1RmEn/Z3yqJ6B.X0eJ5OYeXbRn6OZ8/2uTFPT0YrLF.Aq', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
--- Usuário de vendas (senha: vendas123)
-INSERT INTO usuarios (id, nome, email, senha_hash, ativo, created_at, ultimo_acesso) 
-VALUES (3, 'Equipe de Vendas', 'vendas@perfumes.com.br', '$2b$12$hKY9D.z7InigTlnZgRdeS.4qJITI0MStO40tJc.xOJGmD8GJwMTHO', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+VALUES (2, 'João Santos', 'joao.santos@exemplo.com', '(21) 91234-5678', 'Problema com entrega', 'Meu pedido #12345 ainda não chegou e já se passaram 10 dias. Podem verificar?', 1, CURREN
+(Content truncated due to size limit. Use line ranges to read in chunks)

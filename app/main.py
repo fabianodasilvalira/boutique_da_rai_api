@@ -1,14 +1,20 @@
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+import os
 from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.core.database import engine, Base, get_db
-from app.routers import categorias, produtos, quiz, contatos, usuarios
+from app.routers import categorias, produtos, quiz, contatos, usuarios, imagens
 from app.models.models import Categoria, Produto, QuizPergunta, QuizOpcao, QuizResultado, QuizRegra, Contato, Usuario
+from app.models.imagem import Imagem
 
 # Criar tabelas no banco de dados
 Base.metadata.create_all(bind=engine)
+
+# Garantir que o diretório de uploads existe
+os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -24,12 +30,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Servir arquivos estáticos (uploads)
+app.mount("/uploads", StaticFiles(directory=settings.UPLOAD_DIR), name="uploads")
+
 # Incluir routers
 app.include_router(categorias.router, prefix=settings.API_V1_STR)
 app.include_router(produtos.router, prefix=settings.API_V1_STR)
 app.include_router(quiz.router, prefix=settings.API_V1_STR)
 app.include_router(contatos.router, prefix=settings.API_V1_STR)
 app.include_router(usuarios.router, prefix=settings.API_V1_STR)
+app.include_router(imagens.router, prefix=settings.API_V1_STR)
 
 
 @app.get("/")

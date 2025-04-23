@@ -1,0 +1,38 @@
+-- SQL Inserts para a tabela de imagens
+-- Perfumes API - Dados de teste para imagens
+
+-- Imagens para categorias
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (1, 'categoria_masculino_1.jpg', '/home/ubuntu/perfumes_api/uploads/categoria_masculino_1.jpg', 'perfumes_masculinos.jpg', 'image/jpeg', 'categoria', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (2, 'categoria_feminino_1.jpg', '/home/ubuntu/perfumes_api/uploads/categoria_feminino_1.jpg', 'perfumes_femininos.jpg', 'image/jpeg', 'categoria', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (3, 'categoria_unissex_1.jpg', '/home/ubuntu/perfumes_api/uploads/categoria_unissex_1.jpg', 'perfumes_unissex.jpg', 'image/jpeg', 'categoria', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Imagens para produtos
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (4, 'produto_elegance_1.jpg', '/home/ubuntu/perfumes_api/uploads/produto_elegance_1.jpg', 'elegance_pour_homme_1.jpg', 'image/jpeg', 'produto', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (5, 'produto_elegance_2.jpg', '/home/ubuntu/perfumes_api/uploads/produto_elegance_2.jpg', 'elegance_pour_homme_2.jpg', 'image/jpeg', 'produto', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (6, 'produto_blue_ocean_1.jpg', '/home/ubuntu/perfumes_api/uploads/produto_blue_ocean_1.jpg', 'blue_ocean_1.jpg', 'image/jpeg', 'produto', 2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (7, 'produto_floral_1.jpg', '/home/ubuntu/perfumes_api/uploads/produto_floral_1.jpg', 'floral_essence_1.jpg', 'image/jpeg', 'produto', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (8, 'produto_floral_2.jpg', '/home/ubuntu/perfumes_api/uploads/produto_floral_2.jpg', 'floral_essence_2.jpg', 'image/jpeg', 'produto', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (9, 'produto_floral_3.jpg', '/home/ubuntu/perfumes_api/uploads/produto_floral_3.jpg', 'floral_essence_3.jpg', 'image/jpeg', 'produto', 4, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Imagens temporárias (sem entidade_id)
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (10, 'temp_image_1.jpg', '/home/ubuntu/perfumes_api/uploads/temp_image_1.jpg', 'upload_temp_1.jpg', 'image/jpeg', 'produto', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO imagens (id, filename, filepath, original_filename, content_type, entidade_tipo, entidade_id, created_at, updated_at) 
+VALUES (11, 'temp_image_2.jpg', '/home/ubuntu/perfumes_api/uploads/temp_image_2.jpg', 'upload_temp_2.jpg', 'image/jpeg', 'categoria', NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
